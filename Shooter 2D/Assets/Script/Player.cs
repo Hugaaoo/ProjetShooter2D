@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            Instantiate(_projectile, transform.position, Quaternion.Euler(transform.forward));
+            Instantiate(_projectile, transform.position, _projectile.transform.rotation);
 
 
         }

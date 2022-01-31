@@ -52,6 +52,11 @@ Player
 
 
 
+Fait avancer le joueurs en avant
+
+ 
+ transform.Translate(Vector3.forward * speed*Time.deltaTime);
+
 
 
 Ennemies 
