@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnerAsteroide : MonoBehaviour
 
- {
-        
+{
+
     public GameObject[] Asteroid;
     public float Timer;
     // Start is called before the first frame update
@@ -40,5 +40,5 @@ public class SpawnerAsteroide : MonoBehaviour
         }
     }
 }
-    
+
 

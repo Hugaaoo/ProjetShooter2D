@@ -14,3 +14,4 @@ public class Destruction : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 }
+

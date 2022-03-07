@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 6656951765956017617}
   - component: {fileID: 441182569539535342}
   - component: {fileID: 5481581440295780185}
-  - component: {fileID: 5481581440295780186}
   - component: {fileID: -5131438996552932501}
   - component: {fileID: 2021777077911731945}
-  - component: {fileID: -212276351566330206}
+  - component: {fileID: -889376315641719961}
   m_Layer: 6
   m_Name: Alien 1
   m_TagString: Alien
@@ -114,19 +113,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.90625}
   m_EdgeRadius: 0
---- !u!114 &5481581440295780186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741638960442057343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eaf6307e947f7e4f9b7171353dc63dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
 --- !u!50 &-5131438996552932501
 Rigidbody2D:
   serializedVersion: 4
@@ -174,7 +160,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.90625}
   m_EdgeRadius: 0
---- !u!114 &-212276351566330206
+--- !u!114 &-889376315641719961
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

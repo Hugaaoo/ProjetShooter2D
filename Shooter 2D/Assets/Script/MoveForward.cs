@@ -27,12 +27,12 @@ public class MoveForward : MonoBehaviour
     void Update()
     {
         //
-        transform.position=transform.position+Vector3.up * Time.deltaTime * _speed;
+        transform.position = transform.position + Vector3.up * Time.deltaTime * _speed;
 
 
         float PositionY = transform.position.y;
 
-        if (PositionY > _limitY || PositionY < -_limitY) 
+        if (PositionY > _limitY || PositionY < -_limitY)
 
 
         {
