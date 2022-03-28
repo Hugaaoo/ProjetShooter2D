@@ -9,12 +9,12 @@ public class EnemyController : MonoBehaviour {
 	public float speed;
 
 	public GameObject shot;
-	public Text winText;
+	
 	public float fireRate = 0.997f;
 
 	// Use this for initialization
 	void Start () {
-		winText.enabled = false;
+		
 		InvokeRepeating ("MoveEnemy", 0.1f, 0.3f);
 		enemyHolder = GetComponent<Transform> ();
 	}
@@ -48,7 +48,7 @@ public class EnemyController : MonoBehaviour {
 		}
 
 		if (enemyHolder.childCount == 0) {
-			winText.enabled = true;
+			
 		}
 	}
 }

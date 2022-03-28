@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1080307422765017735}
   - component: {fileID: 9162508444520267867}
   - component: {fileID: -5002091793659254808}
-  - component: {fileID: 8045306873618444081}
+  - component: {fileID: 8865897910404474195}
+  - component: {fileID: 8126489896049751171}
   m_Layer: 6
   m_Name: Alien 3
   m_TagString: Alien
@@ -133,7 +134,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8045306873618444081
+--- !u!114 &8865897910404474195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,7 +143,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 4030637716509670374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eaf6307e947f7e4f9b7171353dc63dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ed6572b63734f64998064da6b75518a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  Timer: 0.1
+  _projectile: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
+--- !u!114 &8126489896049751171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4030637716509670374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a745dfc80a747fa44b259fe42d126bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  shot: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
+  fireRate: 0.997

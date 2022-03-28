@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 565148053888408698}
   - component: {fileID: 180917412268180747}
   - component: {fileID: -302598944147050118}
+  - component: {fileID: 2853741883617956505}
   m_Layer: 5
   m_Name: shoot1
   m_TagString: Untagged
@@ -125,3 +126,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 25
   _limitY: 20
+--- !u!114 &2853741883617956505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8448035898601792282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2164ce2f74f30044588477abdb853167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
+  NombreEnnemies: 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Alien
   - Asteroid
+  - Ennemi shot
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Alien
-  - 
+  - Tir
   - 
   - 
   - 
