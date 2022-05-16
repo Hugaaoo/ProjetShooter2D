@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 5481581440295780185}
   - component: {fileID: -5131438996552932501}
   - component: {fileID: 2021777077911731945}
+  - component: {fileID: 7393307216179668534}
   - component: {fileID: -889376315641719961}
+  - component: {fileID: 3953953055566247982}
   m_Layer: 6
   m_Name: Alien 1
   m_TagString: Alien
@@ -160,6 +162,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.90625}
   m_EdgeRadius: 0
+--- !u!114 &7393307216179668534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741638960442057343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a745dfc80a747fa44b259fe42d126bc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  Vie: 2
+  shot: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
+  fireRate: 0.997
 --- !u!114 &-889376315641719961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +187,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741638960442057343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eaf6307e947f7e4f9b7171353dc63dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ed6572b63734f64998064da6b75518a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
+  Timer: 0
+  _projectile: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
+--- !u!114 &3953953055566247982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741638960442057343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8dfcff9039c19b49b57d0fb96f577c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Powerup: {fileID: 5973582270484300406, guid: 0f7c1da06f9a13e478ecf31a8a5124d4, type: 3}
+  Powerup2: {fileID: 2792376183089057411, guid: 4dabc6697cefa07428040b6dbd7cf4ba, type: 3}

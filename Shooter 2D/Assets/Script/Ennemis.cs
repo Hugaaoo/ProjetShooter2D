@@ -32,7 +32,7 @@ public class Ennemis : MonoBehaviour
 		{
 			if (enemy.position.x < -10.5f || enemy.position.x > 10.5f)
 			{
-				Debug.Log("coucou");
+				
 				speed = -speed;
 				enemyHolder.position += Vector3.down * 0.5f;
 				return;

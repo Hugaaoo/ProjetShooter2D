@@ -11,8 +11,16 @@ public class Asteroid : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Tir"))
+        {
+            Destroy(gameObject);
+
+            this.gameObject.SetActive(false);
+
+            Debug.Log("hit detected");
+        }
     }
 }

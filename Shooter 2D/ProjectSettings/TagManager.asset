@@ -7,6 +7,8 @@ TagManager:
   - Alien
   - Asteroid
   - Ennemi shot
+  - Powerup
+  - Tir
   layers:
   - Default
   - TransparentFX
@@ -16,8 +18,8 @@ TagManager:
   - UI
   - Alien
   - Tir
-  - 
-  - 
+  - Powerup
+  - 'Asteroid '
   - 
   - 
   - 

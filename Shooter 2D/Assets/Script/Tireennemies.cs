@@ -28,7 +28,7 @@ public class Tireennemies : MonoBehaviour
             Instantiate(_projectile, transform.position, _projectile.transform.rotation);
 
             Timer = Random.Range(2, 7);
-            Debug.Log("Creer bullet, nouveau timer : " + Timer);
+            
         }
         else
         {

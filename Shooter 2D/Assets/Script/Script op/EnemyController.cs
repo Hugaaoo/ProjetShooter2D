@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour {
 
 	private Transform enemyHolder;
 	public float speed;
-
+	public float Vie = 10f ;
 	public GameObject shot;
 	
 	public float fireRate = 0.997f;
@@ -50,5 +50,20 @@ public class EnemyController : MonoBehaviour {
 		if (enemyHolder.childCount == 0) {
 			
 		}
-	}
+	
+    }
+
+    public void Hit()
+    {
+		Vie = Vie - 1;
+
+		if (Vie <= 0)
+
+		{
+			Destroy(gameObject);
+		}
+
+    }
+
+
 }

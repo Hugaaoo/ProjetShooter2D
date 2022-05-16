@@ -5,20 +5,37 @@ public class Destruction : MonoBehaviour
 
 {
     public GameObject explosion;
-    public string NombreEnnemies;
+ 
+   
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("hit detected");
 
+        EnemyController hit = other.gameObject.GetComponent<EnemyController>();
+        if(hit == null)
+        {
+            Destroy(other.gameObject);
+            
+        }
+        else
+        {
+            hit.Hit();
+        }
+         
 
-        Destroy(other.gameObject);
+      
         this.gameObject.SetActive(false);
+
+
+        
+           
+        
+        
         
     }
 }
 
 
 
-public class Powerup : MonoBehaviour { }

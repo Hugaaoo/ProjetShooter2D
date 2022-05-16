@@ -161,5 +161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+  Vie: 1
   shot: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
   fireRate: 0.997

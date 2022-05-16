@@ -11,12 +11,39 @@ public class Mort : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("hit detected");
-        GameObject e = Instantiate(explosion) as GameObject;
-        e.transform.position = transform.position;
-        Destroy(other.gameObject);
-        this.gameObject.SetActive(false);
+        if (other.gameObject.CompareTag("Asteroid"))
+        {
+            Destroy(gameObject);
 
-        SceneManager.LoadScene("Menu");
+            this.gameObject.SetActive(false);
+
+            Debug.Log("hit detected");
+
+            SceneManager.LoadScene("Menu");
+
+            GameObject e = Instantiate(explosion) as GameObject;
+            e.transform.position = transform.position;
+        }
+
+
+        if (other.gameObject.CompareTag("Tir"))
+        {
+            Destroy(gameObject);
+
+            this.gameObject.SetActive(false);
+
+            Debug.Log("hit detected");
+
+            SceneManager.LoadScene("Menu");
+
+            GameObject e = Instantiate(explosion) as GameObject;
+            e.transform.position = transform.position;
+        }
+
+
+        
+
+        
     }
+   
 }

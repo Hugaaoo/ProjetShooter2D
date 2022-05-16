@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2853741883617956505}
   m_Layer: 5
   m_Name: shoot1
-  m_TagString: Untagged
+  m_TagString: Tir
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e05825b73321b4a913bb88356c07fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 25
+  _speed: 20
   _limitY: 20
 --- !u!114 &2853741883617956505
 MonoBehaviour:
@@ -139,4 +139,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 0}
-  NombreEnnemies: 
