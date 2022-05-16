@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
     public GameObject _projectile;
 
     public float Timer;
-    public bool powerupactif; 
+    public bool powerupactif;
+    public bool malusactif;
 
 
     // Start is called before the first frame update
@@ -34,7 +35,13 @@ public class Player : MonoBehaviour
 
         transform.position = new Vector3(positionX, transform.position.y, transform.position.z);
 
+        if (malusactif)
 
+        {
+
+        }
+
+        else { 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (Timer <= 0 || powerupactif  ) 
@@ -43,12 +50,10 @@ public class Player : MonoBehaviour
 
                 Timer = 1; 
             }
-
-            
-        
-
-    
         }
+
+
+    }
         // permet de faire diminuer le timer 
         Timer = Timer - Time.deltaTime;
 

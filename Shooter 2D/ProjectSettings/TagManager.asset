@@ -9,6 +9,7 @@ TagManager:
   - Ennemi shot
   - Powerup
   - Tir
+  - PowerUp2
   layers:
   - Default
   - TransparentFX
