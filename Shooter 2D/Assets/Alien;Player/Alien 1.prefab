@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5131438996552932501}
   - component: {fileID: 2021777077911731945}
   - component: {fileID: 7393307216179668534}
-  - component: {fileID: -889376315641719961}
+  - component: {fileID: 5714013264618662370}
   - component: {fileID: 3953953055566247982}
   m_Layer: 6
   m_Name: Alien 1
@@ -176,9 +176,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   Vie: 2
-  shot: {fileID: 4889376549750741421, guid: a8f55253c9256aa45b59c0bc63411913, type: 3}
+  shot: {fileID: 0}
   fireRate: 1
---- !u!114 &-889376315641719961
+--- !u!114 &5714013264618662370
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

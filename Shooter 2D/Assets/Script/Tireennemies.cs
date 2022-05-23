@@ -26,7 +26,7 @@ public class Tireennemies : MonoBehaviour
         {
 
             Instantiate(_projectile, transform.position, _projectile.transform.rotation);
-
+            SoundEffectsHelper.Instance.MakeEnemyShotSound();
             Timer = Random.Range(2, 7);
             
         }

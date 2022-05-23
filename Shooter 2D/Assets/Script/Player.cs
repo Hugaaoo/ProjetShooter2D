@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public bool powerupactif;
     public bool malusactif;
 
+    public AudioClip[] shootsound;
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +45,12 @@ public class Player : MonoBehaviour
         else { 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Timer <= 0 || powerupactif  ) 
+                
+                if (Timer <= 0 || powerupactif  ) 
             { 
                 Instantiate(_projectile, transform.position, _projectile.transform.rotation);
-
-                Timer = 1; 
+                    SoundEffectsHelper.Instance.MakePlayerShotSound();
+                    Timer = 1; 
             }
         }
 

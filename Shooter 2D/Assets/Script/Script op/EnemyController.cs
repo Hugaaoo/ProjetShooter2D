@@ -10,6 +10,8 @@ public class EnemyController : MonoBehaviour {
 	public float Vie = 10f ;
 	public GameObject shot;
 	
+
+
 	public float fireRate = 0.997f;
 
 	// Use this for initialization
@@ -61,9 +63,14 @@ public class EnemyController : MonoBehaviour {
 
 		{
 			Destroy(gameObject);
+			
+			
+			SoundEffectsHelper.Instance.MakeExplosionSound();
 		}
+		
 
-    }
+
+	}
 
 
 }

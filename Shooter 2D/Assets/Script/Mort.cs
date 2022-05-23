@@ -14,7 +14,7 @@ public class Mort : MonoBehaviour
         if (other.gameObject.CompareTag("Asteroid"))
         {
             Destroy(gameObject);
-
+            SoundEffectsHelper.Instance.MakeExplosionSound();
             this.gameObject.SetActive(false);
 
             Debug.Log("hit detected");
@@ -34,10 +34,12 @@ public class Mort : MonoBehaviour
 
             Debug.Log("hit detected");
 
-            SceneManager.LoadScene("Menu");
-
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = transform.position;
+
+            SceneManager.LoadScene("Menu");
+
+            
         }
 
 
